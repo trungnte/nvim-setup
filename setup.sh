@@ -1,6 +1,9 @@
 #!/bin/sh
 
-mkdir -p ${HOME}/.config/nvim
-cp ./init.lua ${HOME}/.config/nvim/
+git clone git@github.com:trungnte/nvim-setup.git
 
+mkdir -p ${HOME}/.config/nvim
+cp ./nvim-setup/init.lua ${HOME}/.config/nvim/
+
+rm -rf ./nvim-setup
 
